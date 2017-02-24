@@ -142,7 +142,7 @@ a {
     position: relative;
     z-index: 1;
     color: #fff9f0;
-    margin-top: 8em;
+    margin-top: 10%;
     padding: 3em;
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -165,7 +165,7 @@ a {
 }
 
 .section-content {
-  box-sizing: border-box;
+    box-sizing: border-box;
     padding: 2em 1em;
 }
 
@@ -206,5 +206,15 @@ a {
     }
     .navbar-content.active {
         height: 444px;
+    }
+}
+
+@media screen and ( max-height: 520px) {
+    .hero {
+        height: 320px;
+    }
+    .hero-info {
+        margin-top: 0;
+        padding: 1em;
     }
 }
