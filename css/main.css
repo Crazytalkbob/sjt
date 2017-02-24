@@ -47,10 +47,13 @@ a {
 
 .navbar-logo {
     float: left;
+    height: 60px;
+    width: 86px;
+    background-image: url('../assets/sjt_logo.png');
 }
 
-.navbar-logo img {
-    height: 60px;
+.navbar-logo:hover {
+    background-position: center -60px;
 }
 
 .navbar-content {
@@ -62,6 +65,7 @@ a {
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;
     -webkit-padding-start: 0;
+    transition: all 200ms ease;
 }
 
 .navbar-content li {
@@ -80,6 +84,39 @@ a {
     border-bottom: 3px solid #bee69c;
 }
 
+#mobile-menu {
+    background: #0f0b15;
+    float: right;
+    width: 60px;
+    height: 60px;
+    display: none;
+    cursor: pointer;
+}
+
+#mobile-menu .hamburger {
+    display: block;
+    opacity: 1;
+    height: 4px;
+    overflow: hidden;
+    width: 60%;
+    margin: 12px auto 10px auto;
+    background-color: #bee69c;
+    transition: opacity, transform;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.7, 0, 0, 0.7);
+}
+
+#mobile-menu.active .hamburger:nth-of-type(1) {
+    transform: translateY(16px) rotate(45deg);
+}
+
+#mobile-menu.active .hamburger:nth-of-type(2) {
+    opacity: 0;
+}
+
+#mobile-menu.active .hamburger:nth-of-type(3) {
+    transform: translateY(-16px) rotate(-45deg);
+}
 
 /***************** HERO STYLES *******************/
 
@@ -121,7 +158,7 @@ a {
 /***************** MAIN CONTENT STYLES *******************/
 
 .section-header {
-    padding: 1em 0;
+    padding: 1em;
     background-color: #2c2831;
     color: #fff9f0;
 }
@@ -140,5 +177,29 @@ a {
     .hero-video>video {
         height: 100%;
         width: auto;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    body {
+        font-size: 14px;
+    }
+    .navbar-content li, #mobile-menu {
+        display: block;
+    }
+    .navbar-content li {
+      text-align: center;
+      font-size: 2em;
+    }
+    .navbar-content {
+        overflow: hidden;
+        height: 0;
+        padding-bottom: 6px;
+        width: 100%;
+        float: none;
+        background: #0f0b15;
+    }
+    .navbar-content.active {
+        height: 444px;
     }
 }
