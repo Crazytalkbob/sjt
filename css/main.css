@@ -388,6 +388,9 @@ a {
     .container, .section-header h2 {
         width: 100%;
     }
+    .info-box-container {
+        box-shadow: 0.5em 0.5em #2c2831;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -409,10 +412,19 @@ a {
         left: 0.25em;
     }
     .info-box-content {
-        font-size: 0.9em;
+        font-size: 1.1em;
     }
     .info-box-content h3 {
-        font-size: 1.5em;
+        font-size: 1.15em;
+    }
+    .debris-fact {
+        padding: 0 0.25em;
+    }
+    .debris-fact p {
+      margin-bottom: 0.25em;
+    }
+    .debris-fact img {
+      max-width: 30%;
     }
 }
 
@@ -465,10 +477,13 @@ a {
         left: 0;
     }
     .info-box-content {
-        font-size: 1.5em;
+        font-size: 1.35em;
     }
     .info-box-container {
         width: 100%;
+    }
+    .debris-fact p {
+      margin-bottom: 1em;
     }
 }
 
