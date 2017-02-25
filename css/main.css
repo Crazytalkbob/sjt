@@ -344,6 +344,48 @@ a {
 }
 
 
+/***************** WHEN? Section *******************/
+
+#section-when {
+    background-image: url('../assets/shuttle_launch.jpg');
+}
+
+#section-when .section-content {
+  padding: 1em 0;
+}
+
+.countdown-container {
+  display: flex;
+  justify-content: space-around;
+  width: 75%;
+  padding: 0.5em;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 3em auto;
+  text-align: center;
+  color: #fff9f0;
+  text-shadow: 2px 2px black;
+  border-radius: 0.5em;
+}
+
+.timer-section {
+  width: 25%;
+}
+
+.countdown-container h3 {
+  font-size: 2.5em;
+  font-family: 'Space Mono', monospace;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #bee69c;
+  padding: 0.5em;
+  margin: 0.25em;
+  border-radius: 0.25em;
+}
+
+.countdown-container p {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
 /***************** FAQ Section *******************/
 
 .faq-questions {
@@ -421,10 +463,14 @@ a {
         padding: 0 0.25em;
     }
     .debris-fact p {
-      margin-bottom: 0.25em;
+        margin-bottom: 0.25em;
     }
     .debris-fact img {
-      max-width: 30%;
+        max-width: 30%;
+    }
+    .countdown-container {
+      width: 90%;
+      font-size: 0.75em;
     }
 }
 
@@ -483,7 +529,7 @@ a {
         width: 100%;
     }
     .debris-fact p {
-      margin-bottom: 1em;
+        margin-bottom: 1em;
     }
 }
 
