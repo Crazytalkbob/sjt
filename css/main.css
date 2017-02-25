@@ -262,6 +262,36 @@ a {
 }
 
 
+/***************** FAQ Section *******************/
+
+.faq-questions {
+    list-style-type: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-padding-start: 0;
+    margin: 0;
+}
+
+.faq-questions li:nth-child(odd) {
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.faq-questions li:nth-child(odd)::before {
+  content: 'Q:';
+  font-size: 2em;
+  padding-right: 0.25em;
+  color: #ac7c3c;
+}
+
+.faq-questions li:nth-child(even)::before {
+  content: 'A:';
+  font-size: 1.75em;
+  font-weight: bold;
+  padding: 0 0.25em 0 1em;
+  color: #ac7c3c;
+}
+
 /***************** @media STYLES *******************/
 
 @media screen and (max-width: 1300px) {

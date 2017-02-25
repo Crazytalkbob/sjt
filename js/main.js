@@ -13,9 +13,7 @@ $(document).ready(function() {
 
     $('.people-arrow').click(function() {
 
-        var dir = $(this).data('direction')
-
-        console.log(dir);
+        var dir = $(this).data('direction');
 
         if (currentPerson < 300 && dir === 'right') {
             currentPerson += 100;
@@ -35,8 +33,7 @@ $(document).ready(function() {
             }
         }
 
-        $('.people-container').css('left', '-' + currentPerson + '%')
-        console.log(currentPerson);
+        $('.people-container').css('left', '-' + currentPerson + '%');
 
     });
 });
