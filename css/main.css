@@ -227,15 +227,15 @@ a {
 }
 
 .people-arrow:hover {
-  cursor: default;
-}
-
-.people-arrow.active:hover {
-  cursor: pointer;
+    cursor: default;
 }
 
 .people-arrow.active {
     color: #bee69c;
+}
+
+.people-arrow.active:hover {
+    cursor: pointer;
 }
 
 .right-arrow {
@@ -367,42 +367,43 @@ a {
 }
 
 #section-when .section-content {
-  padding: 1em 0;
+    padding: 1em 0;
 }
 
 .countdown-container {
-  display: -webkit-flex;
-  -webkit-justify-content: space-around;
-  display: flex;
-  justify-content: space-around;
-  width: 75%;
-  padding: 0.5em;
-  background-color: rgba(0, 0, 0, 0.5);
-  margin: 3em auto;
-  text-align: center;
-  color: #fff9f0;
-  text-shadow: 2px 2px black;
-  border-radius: 0.5em;
+    display: -webkit-flex;
+    -webkit-justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+    padding: 0.5em;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 3em auto;
+    text-align: center;
+    color: #fff9f0;
+    text-shadow: 2px 2px black;
+    border-radius: 0.5em;
 }
 
 .timer-section {
-  width: 25%;
+    width: 25%;
 }
 
 .countdown-container h3 {
-  font-size: 2.5em;
-  font-family: 'Space Mono', monospace;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #bee69c;
-  padding: 0.5em;
-  margin: 0.25em;
-  border-radius: 0.25em;
+    font-size: 2.5em;
+    font-family: 'Space Mono', monospace;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #bee69c;
+    padding: 0.5em;
+    margin: 0.25em;
+    border-radius: 0.25em;
 }
 
 .countdown-container p {
-  font-weight: bold;
-  font-size: 1.25em;
+    font-weight: bold;
+    font-size: 1.25em;
 }
+
 
 /***************** FAQ Section *******************/
 
@@ -434,6 +435,29 @@ a {
     color: #ac7c3c;
 }
 
+
+/***************** Footer STYLES *******************/
+
+.footer {
+    padding: 1em;
+    width: 45%;
+    line-height: 2em;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.footer-left {
+    float: left;
+}
+
+.footer-right {
+    float: right;
+}
+
+.social-icons i {
+  font-size: 2em;
+  padding: 0 0.25em;
+}
 
 /***************** @media STYLES *******************/
 
@@ -487,8 +511,8 @@ a {
         max-width: 30%;
     }
     .countdown-container {
-      width: 90%;
-      font-size: 0.75em;
+        width: 90%;
+        font-size: 0.75em;
     }
 }
 
